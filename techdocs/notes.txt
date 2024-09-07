@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=FpnxLpDCWtE&list=PLjAO9H6_lFDhcou0yBFV_SsdrfQzFvU_j
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html?highlight=component#example-project
+
+RGB Interfaced LCD
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/lcd/rgb_lcd.html
+
+What is VGA and How to Use it With a Raspberry Pi Pico 
+https://www.youtube.com/watch?v=KSYjGul84aU
+
+RP2040 Doom: DOOM1 Demo/Gameplay on a Raspberry Pi Pico
+https://www.youtube.com/watch?v=eDVazQVycP4&t=0s
+
+VGA Connector Pinout - Basic Introduction is Here 
+https://www.nextpcb.com/blog/vga-connector-pinout
+
+VGA Pinout, Features, Advantages & Disadvantages
+https://www.etechnophiles.com/vga-pinout-features/
