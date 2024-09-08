@@ -133,7 +133,6 @@ bool CGame::loadLevel(bool restart)
 {
     printf("loading level: %d ...\n", m_level + 1);
     setMode(restart ? MODE_RESTART : MODE_INTRO);
-    // return true;
 
     int i = m_level % m_arch.size();
     if (!map.fromMemory(&levels_mapz + m_arch.at(i)))
@@ -142,7 +141,6 @@ bool CGame::loadLevel(bool restart)
         return false;
     }
 
-    // return true;
     printf("level loaded\n");
 
     Pos pos = map.findFirst(TILES_ANNIE2);

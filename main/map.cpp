@@ -142,15 +142,15 @@ bool CMap::fromStream(FILE *sfile, uint16_t len, uint16_t hei)
 
 bool CMap::fromMemory(uint8_t *mem)
 {
-    if (memcmp(mem, SIG, strlen(SIG)) != 0)
+    uint32_t sig = *reinterpret_cast<uint32_t *>(mem);
+    if (memcmp(&sig, SIG, sizeof(sig)) != 0)
     {
         m_lastError = "signature mismatch";
         printf("%s\n", m_lastError.c_str());
         return false;
     }
 
-    uint16_t ver = 0;
-    memcpy(mem + 4, &ver, 2);
+    uint16_t ver = *reinterpret_cast<uint16_t *>(mem + 4);
     if (ver > VERSION)
     {
         m_lastError = "bad version";
@@ -165,11 +165,13 @@ bool CMap::fromMemory(uint8_t *mem)
     resize(len, hei, true);
     const uint32_t mapSize = len * hei;
     printf("mapSize: %ld\n", mapSize);
-    memcpy(m_map, mem + 8, mapSize);
+    for (int i = 0; i < mapSize; ++i)
+    {
+        m_map[i] = mem[8 + i];
+    }
     m_attrs.clear();
     uint8_t *ptr = mem + 8 + mapSize;
-    uint16_t attrCount = 0;
-    memcpy(&attrCount, ptr, 2);
+    uint16_t attrCount = *reinterpret_cast<uint16_t *>(ptr);
     ptr += 2;
     for (int i = 0; i < attrCount; ++i)
     {

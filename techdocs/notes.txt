@@ -1,3 +1,4 @@
+Building a New "Retro" Computer - Part 1: VGA on the ESP32-S3
 https://www.youtube.com/watch?v=FpnxLpDCWtE&list=PLjAO9H6_lFDhcou0yBFV_SsdrfQzFvU_j
 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html?highlight=component#example-project
@@ -16,3 +17,6 @@ https://www.nextpcb.com/blog/vga-connector-pinout
 
 VGA Pinout, Features, Advantages & Disadvantages
 https://www.etechnophiles.com/vga-pinout-features/
+
+Max .rodata 4MB? How to use 12MB in 16MB WROVER for fast .rodata? FATFS is slow.
+https://esp32.com/viewtopic.php?t=10394

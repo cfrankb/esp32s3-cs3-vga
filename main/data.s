@@ -10,10 +10,9 @@
 .type levels_mapz STT_COMMON
 
 .section .rodata
-#.section .flash.text 
-#.section .text 
+#.section .flash.text
+#.section .text
 .balign 4
-
     tiles_mcz: .incbin "../data/tiles.mcz",12
     annie_mcz: .incbin "../data/annie.mcz",12
     animz_mcz: .incbin "../data/animz.mcz",12

@@ -1,12 +1,12 @@
 esp32s3
-pin 1   Low Red
-pin 2   Low Green
-pin 3   Low Blue
+pin 1   Mid Red
+pin 2   Mid Green
+pin 3   Mid Blue
 pin 4   High Red
 pin 5   High Green
 pin 16  High Blue
-pin 15  Mid Red
-pin 14  Mid Green
+pin 15  Low Red
+pin 14  Low Green
 pin 13  VSync   (100R)
 pin 12  HSync   (100R)
 
@@ -17,11 +17,11 @@ Mid = 1k
 
 Image Encoding
 // bit
-// 1     low red
-// 2     low green
-// 3     low blue
+// 1     mid red
+// 2     mid green
+// 3     mid blue
 // 4     high red
 // 5     high green
 // 6     high blue
-// 7     mid red
-// 8     mid green
+// 7     low red
+// 8     low green
